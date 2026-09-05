@@ -6,4 +6,17 @@
 body {
   color: abstracts.$blue;
   font: normal 125% / 1.4 abstracts.$font-primary;
+  &::before{
+     background-color: abstracts.$green;
+     width: 35%;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     content: "";
+     position: absolute;
+     z-index: -1;
+     
+     
+
+  }
  }
