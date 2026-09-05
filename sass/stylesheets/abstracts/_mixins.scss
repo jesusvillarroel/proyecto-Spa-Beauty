@@ -6,6 +6,7 @@
 /// @author Harry Roberts
 /// @param {Bool} $self [false] - Whether or not to include current selector
 /// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+
 @mixin on-event($self: false) {
   @if $self {
     &,
@@ -33,4 +34,22 @@
     @content;
   }
 }
+@mixin btn-radius($bg-color) {
+  border-radius: 32px;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background-color:$bg-color;
+  padding: 10px 25px;
 
+}
+@mixin reset-list() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}

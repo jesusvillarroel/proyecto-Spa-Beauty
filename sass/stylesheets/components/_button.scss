@@ -1,3 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+@use "../abstracts" as vp;
+.btn-radius{
+    @include vp.btn-radius(vp.$blue);
+}
