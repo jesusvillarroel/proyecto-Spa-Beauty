@@ -41,6 +41,11 @@
   color: white;
   background-color:$bg-color;
   padding: 10px 25px;
+  &:hover{
+    background-color: #fff;
+    color: $bg-color;
+    font-size: 18px;
+  }
 
 }
 @mixin reset-list() {
@@ -59,7 +64,7 @@
    color: $color-ppla;
    font-weight: 300;
    padding: 10px 24px;
-   max-width: 315px;
+   max-width: 350px;
   
    p{    
      margin-bottom: 5px; 

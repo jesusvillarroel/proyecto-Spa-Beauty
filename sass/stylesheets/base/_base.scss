@@ -9,6 +9,10 @@
  */
 html {
   box-sizing: border-box;
+  background: linear-gradient(to right, abstracts.$gray-light 0%, abstracts.$gray-light 65%, abstracts.$green 65%, abstracts.$green 100%);
+  height: 750px;
+  background-repeat: no-repeat;
+  
 }
 
 /**

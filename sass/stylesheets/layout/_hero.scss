@@ -2,6 +2,7 @@
 .hero{
     margin-top: 60px;
     display: flex;
+    margin-bottom: 230px;
     &_content{
         width: 65%;
         h1{
@@ -49,20 +50,21 @@
         position: relative;
         img{
             position: absolute;
-            left: -182%;
-            top:-57%;
+            left: -172%;
+            top:-60%;
             z-index: -1;
         }
         &_content1{
            @include vp.div-flotante(vp.$black,vp.$blue);
-           top: 76%;
-           right: -23%;
+           top: 87%;
+           right: -31%;
+           max-width: 315px;
             
         }
         &_content2{
            @include vp.div-flotante(vp.$black,vp.$blue);
-           bottom: -129%;
-           left: 30%;
+           bottom: -125%;
+           right: -13%;
             
         }
     }
