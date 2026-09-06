@@ -50,6 +50,37 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@mixin div-flotante($color-ppla,$color-sec){
+   background-color:rgba($color: #fff, $alpha: 50%);
+   border-radius: 16px;
+   position: absolute;
+   font-size: 16px;
+   color: $color-ppla;
+   font-weight: 300;
+   padding: 10px 24px;
+   max-width: 315px;
   
-
+   p{    
+     margin-bottom: 5px; 
+     position: relative;
+     padding-top: 8px;
+     &::before{
+       content: "„";
+       display: inline-block;
+       margin-bottom: 5px;
+       font-size: 5rem;
+       position: absolute;
+       color: $color-sec;
+       top: -32px;
+       left: 0px;
+       transform: rotate(180deg);
+      }
+   }     
+   span{
+        color: $color-sec;
+        font-weight: bold; 
+        font-size: 18px;
+         
+      }
 }

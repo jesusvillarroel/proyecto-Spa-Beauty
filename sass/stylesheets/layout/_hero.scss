@@ -1,0 +1,68 @@
+@use '../abstracts' as vp;
+.hero{
+    margin-top: 60px;
+    display: flex;
+    &_content{
+        width: 65%;
+        h1{
+            font-size: 54px;
+            line-height: 64px;
+            font-weight: 700;
+            width: 80%;
+            margin-bottom: 0;
+        }
+        p{
+            color: vp.$gray;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 30px;
+            width: 75%;
+            margin-bottom: 40px;
+        }
+        &_button{
+            ul{
+                @include vp.reset-list();
+                justify-content: stretch;
+                gap: 67px;
+                li{
+                    &:last-of-type{
+                       
+                        
+                        a{
+                            position: relative;
+                            display: block;
+                             img{
+                                position: absolute;
+                                left: -30px;
+                                top: center;
+                             }
+                        }
+                      
+                    }
+                }
+
+            }
+        }
+    }
+    &_img{
+        width: 35%;
+        position: relative;
+        img{
+            position: absolute;
+            left: -182%;
+            top:-57%;
+        }
+        &_content1{
+           @include vp.div-flotante(vp.$black,vp.$blue);
+           top: 76%;
+           right: -23%;
+            
+        }
+        &_content2{
+           @include vp.div-flotante(vp.$black,vp.$blue);
+           bottom: -129%;
+           left: 30%;
+            
+        }
+    }
+}
