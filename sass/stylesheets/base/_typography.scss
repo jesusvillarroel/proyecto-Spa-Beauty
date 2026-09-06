@@ -6,6 +6,8 @@
 body {
   color: abstracts.$blue;
   font: normal 125% / 1.4 abstracts.$font-primary;
+  position: relative;
+  min-height: 100vh;
   &::before{
      background-color: abstracts.$green;
      width: 35%;
@@ -15,6 +17,8 @@ body {
      content: "";
      position: absolute;
      z-index: -1;
+     pointer-events: none;
+     
      
      
 

@@ -9,26 +9,31 @@ header{
     align-items: center;
     nav{
         ul{
-          @include vp.reset-list();
-          gap: 50px;
-          a.submenu{
-            position: relative;
-            img{
-                position: absolute;
-                bottom: -3px;
-                right: -25px;
-
+             @include vp.reset-list();
+             gap: 50px;
+             a{
+                
+                &:hover{
+                      color: vp.$green;
+                      position: relative;
+                
+                    &::before{
+                    
+                        content: "";
+                        width: 80%;
+                        height: 2px;
+                        background-color: vp.$blue;
+                        position: absolute;
+                        left: 10%;
+                        top: 25px;
+                    }
+               }
+              
             }
             
-
-          }
-          a:hover{
-            color: vp.$green;
-            text-decoration: underline;
-            font-size: 18px;   
-          }  
-        }
-    }
+         }
+      }
+    
     aside{
         
         ul{
