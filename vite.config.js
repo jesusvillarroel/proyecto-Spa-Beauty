@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/https://github.com/jesusvillarroel/proyecto-Spa-Beauty.git", 
+  base: '/proyecto-Spa-Beauty/',
 });
