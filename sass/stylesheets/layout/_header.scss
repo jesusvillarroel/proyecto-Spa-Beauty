@@ -10,8 +10,17 @@ header{
     nav{
         ul{
              @include vp.reset-list();
-             gap: 50px;
+            gap: 35px;
              a{
+                &.submenu{
+                    
+                    position: relative;
+                    img{
+                        position: absolute;
+                        left: 20;
+                        top: 1px;
+                    }
+                }
                 
                 &:hover{
                       color: vp.$green;
@@ -39,9 +48,19 @@ header{
         
         ul{
             @include vp.reset-list();
-            gap: 30px;
+            gap: 50px;
+            li{
+                &:first-of-type,&:nth-of-type(2){
+                    
+                    img{
+                        width: 25px;
+                    }
+                }
+            }
             a{
+
                 text-decoration: underline; 
+
                 &:hover{
                     text-decoration: none;
                 }

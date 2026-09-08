@@ -1,11 +1,12 @@
 @use '../abstracts' as vp;
 .service{
     display: flex;
-    margin-top: -95px;
-    gap: 40px;
+    margin-top: -120px;
+    
     background-color: white;
     width: 41%;
-    padding: 32px;
+    padding-top:32px;
+    justify-content: space-between;
     
     article{
         
@@ -17,11 +18,11 @@
         h3{
             font-weight: 500;
             margin-top: 20px;
-            font-size: 28px;
+            font-size: 1.6rem;
             margin-bottom: 0;
         }
         p{
-            font-size: 16px;
+            font-size: 0.9rem;
             text-align: center;
             color: vp.$gray;
             

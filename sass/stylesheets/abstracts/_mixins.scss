@@ -44,7 +44,7 @@
   &:hover{
     background-color: #fff;
     color: $bg-color;
-    font-size: 18px;
+    font-size: 1.1rem;
   }
 
 }
@@ -60,11 +60,11 @@
    background-color:rgba($color: #fff, $alpha: 50%);
    border-radius: 16px;
    position: absolute;
-   font-size: 16px;
+   font-size: 1rem;
    color: $color-ppla;
    font-weight: 300;
    padding: 10px 24px;
-   max-width: 350px;
+   max-width: 315px;
   
    p{    
      margin-bottom: 5px; 
@@ -84,8 +84,8 @@
    }     
    span{
         color: $color-sec;
-        font-weight: bold; 
-        font-size: 18px;
+        font-weight: 600; 
+        font-size: 1.1rem;
          
       }
 }
